@@ -1,9 +1,10 @@
+import { Button } from "@/components/ui/button";
 import React from "react";
 
 export default function LandingPage() {
     return (
-        <div>
-            <h1>Hello world</h1>
+        <div className="h-screen flex justify-center items-center">
+            <Button>Get Started</Button>
         </div>
     );
 }
