@@ -106,9 +106,9 @@ export default function LoginPage() {
             </Form>
 
             <div className="mt-10 text-center">
-                <span className="text-primary hover:underline cursor-pointer text-sm" title="Forgot your password?">
+                <Link href="/reset-password" className="text-primary hover:underline cursor-pointer text-sm" title="Forgot your password?">
                     Forgot your password?
-                </span>
+                </Link>
             </div>
         </>
     );
