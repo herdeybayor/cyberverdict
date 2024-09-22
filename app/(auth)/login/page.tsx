@@ -9,6 +9,7 @@ import { Input } from "@/components/ui/input";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
+import Link from "next/link";
 
 const formSchema = z.object({
     email: z.string().email({
@@ -94,9 +95,13 @@ export default function LoginPage() {
                         })}
                     </div>
 
-                    <Button type="button" className="w-full rounded-lg" variant="outline">
-                        Sign up
-                    </Button>
+                    <div>
+                        <Link href="/register">
+                            <Button type="button" className="w-full rounded-lg" variant="outline">
+                                Sign up
+                            </Button>
+                        </Link>
+                    </div>
                 </form>
             </Form>
 

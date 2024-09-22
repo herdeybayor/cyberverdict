@@ -22,7 +22,7 @@ export default function AuthLayout({ children }: { children: React.ReactNode }) 
             </div>
             <div className="h-full basis-full lg:basis-1/2 p-6 lg:px-20 lg:py-16 overflow-auto">
                 <Logo />
-                <div className="mt-8 lg:mt-48 w-max mx-auto">{children}</div>
+                <div className="mt-8 lg:mt-16 w-max mx-auto">{children}</div>
             </div>
         </div>
     );
